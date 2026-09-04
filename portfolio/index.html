@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malon Christmagloire — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">CM<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="pages/apropos.html">À propos</a></li>
+        <li><a href="pages/Certifications.html">Certifications</a></li>
+        <li><a href="pages/parcours.html">Parcours</a></li>
+        <li><a href="pages/veille.html">Veille</a></li>
+        <li><a href="pages/e5.html">E5</a></li>
+        <li><a href="pages/e6.html">E6</a></li>
+        <li><a href="pages/projets.html">Projets</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="dot"></span> Disponible — BTS SIO SISR · 1ère année
+      </div>
+      <h1 class="hero-title reveal">
+        Malon<br><span class="accent">Christmagloire</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Technicien en infrastructure système et réseaux<br>
+        Alternant chez <strong>Groupe Odéalim</strong> · APEP SUP Paris
+      </p>
+      <div class="hero-actions reveal">
+        <a href="pages/e5.html" class="btn btn-primary">Voir mon tableau E5</a>
+        <a href="pages/contact.html" class="btn btn-ghost">Me contacter</a>
+      </div>
+      <div class="hero-stack reveal">
+        <span class="tag">VirtualBox</span>
+        <span class="tag">pfSense</span>
+        <span class="tag">GLPI</span>
+        <span class="tag">Kanboard</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Windows Server</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">bash — malon@sisr</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">malon@sisr:~$</span> <span class="t-cmd typed">whoami</span></p>
+          <p class="t-out">Malon Christmagloire</p>
+          <p><span class="t-prompt">malon@sisr:~$</span> <span class="t-cmd">cat profil.txt</span></p>
+          <p class="t-out">Étudiant BTS SIO SISR</p>
+          <p class="t-out">Titre TAI · Alternant IT</p>
+          <p class="t-out">Paris, France</p>
+          <p><span class="t-prompt">malon@sisr:~$</span> <span class="t-cmd">ls competences/</span></p>
+          <p class="t-out accent-text">réseau/  sécurité/  virtualisation/  support/</p>
+          <p><span class="t-prompt">malon@sisr:~$</span> <span class="t-cursor">█</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-label">À propos</span>
+          <h2>Un technicien IT<br>passionné par les réseaux</h2>
+          <p>
+            J'ai 25 ans et je suis actuellement en deuxième année de BTS SIO option SISR 
+            à l'<strong>APEP SUP</strong> à Paris. Titulaire d'un titre professionnel 
+            <strong>Technicien d'Assistance en Informatique (TAI)</strong>, je poursuis 
+            aujourd'hui vers une spécialisation en infrastructure système et réseaux.
+          </p>
+          <p>
+            En alternance chez <strong>Groupe Odéalim</strong>, je gère au quotidien 
+            le support utilisateur, la prise en charge des tickets N1 (ponctuellement N2) sur Jira, ainsi que le dépannage informatique et la mise en place 
+            de solutions IT.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">TAI</span>
+              <span class="stat-label">Titre professionnel</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2025</span>
+              <span class="stat-label">Promotion BTS</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-title">Formation</span>
+                <span class="info-val">BTS SIO SISR — APEP SUP Paris</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-title">Alternance</span>
+                <span class="info-val">Technicien IT — Groupe Odéalim</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-title">Localisation</span>
+                <span class="info-val">Paris, Île-de-France</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🔗</span>
+              <div>
+                <span class="info-title">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank" class="info-link">christmagloire-malon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Compétences</span>
+        <h2>Ce que je maîtrise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🖥️</div>
+          <h3>Virtualisation</h3>
+          <p>VirtualBox, VM Windows 10/11/LTSC, Debian, Ubuntu</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔒</div>
+          <h3>Sécurité réseau</h3>
+          <p>pfSense, règles pare-feu, filtrage réseau, WAN/LAN</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📋</div>
+          <h3>Gestion de parc</h3>
+          <p>GLPI, inventaire, ticketing, gestion des incidents</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">📌</div>
+          <h3>Gestion de projet</h3>
+          <p>Kanboard, méthode Kanban, suivi de tâches</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🐧</div>
+          <h3>Systèmes</h3>
+          <p>Linux (Debian/Ubuntu), Windows Server, ligne de commande</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Support IT</h3>
+          <p>Assistance utilisateur, dépannage matériel et logiciel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS APERÇU -->
+  <section class="section projects-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Réalisations</span>
+        <h2>Derniers projets</h2>
+      </div>
+      <div class="projects-grid">
+        <a href="pages/projets.html#virtualbox" class="project-card reveal">
+          <div class="project-tag">Virtualisation</div>
+          <h3>VirtualBox & VMs</h3>
+          <p>Déploiement de machines virtuelles Windows et Linux</p>
+          <span class="project-arrow">→</span>
+        </a>
+        <a href="pages/projets.html#pfsense" class="project-card reveal">
+          <div class="project-tag">Sécurité</div>
+          <h3>Pare-feu pfSense</h3>
+          <p>Configuration d'un pare-feu et règles de filtrage</p>
+          <span class="project-arrow">→</span>
+        </a>
+        <a href="pages/projets.html#glpi" class="project-card reveal">
+          <div class="project-tag">Parc IT</div>
+          <h3>GLPI</h3>
+          <p>Mise en place d'un outil de gestion de parc informatique</p>
+          <span class="project-arrow">→</span>
+        </a>
+        <a href="pages/projets.html#kanboard" class="project-card reveal">
+          <div class="project-tag">Projet</div>
+          <h3>Kanboard</h3>
+          <p>Déploiement d'un outil de gestion de tâches Kanban</p>
+          <span class="project-arrow">→</span>
+        </a>
+      </div>
+      <div class="center reveal">
+        <a href="pages/projets.html" class="btn btn-primary">Voir tous les projets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">CM<span class="accent">.</span></span>
+        <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
