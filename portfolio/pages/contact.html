@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Malon Christmagloire</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">CM<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="e5.html">Tableau E5</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label reveal">Contact</span>
+      <h1 class="reveal">Me contacter</h1>
+      <p class="reveal">Une question ? N'hésite pas à me contacter directement.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="reveal">
+          <span class="section-label">Coordonnées</span>
+          <h2 style="margin: 12px 0 20px; font-size: 1.6rem;">Restons en contact</h2>
+          <p style="color: var(--text-muted); margin-bottom: 32px;">
+            Étudiant en BTS SIO SISR, disponible pour tout échange 
+            autour de l'informatique, des réseaux ou de mon parcours.
+          </p>
+
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-title">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank" class="info-link">
+                  christmagloire-malon
+                </a>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📘</span>
+              <div>
+                <span class="info-title">Facebook</span>
+                <a href="https://www.facebook.com/share/18LydXCJAA/?mibextid=wwXIfr" target="_blank" class="info-link">
+                  Mon profil Facebook
+                </a>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-title">Localisation</span>
+                <span class="info-val">Paris, Île-de-France</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-title">École</span>
+                <a href="https://www.apepsup.com/" target="_blank" class="info-link">APEP SUP Paris</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="section-label">Message</span>
+          <h2 style="margin: 12px 0 20px; font-size: 1.6rem;">Envoyer un message</h2>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" placeholder="Votre nom" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" placeholder="votre@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" placeholder="Objet de votre message"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          </form>
+          <p style="font-size:0.78rem; color: var(--text-muted); margin-top: 12px;">
+            * Le formulaire nécessite une configuration côté serveur. En attendant, 
+            contacte-moi directement via LinkedIn.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">CM<span class="accent">.</span></span>
+        <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Formulaire non encore configuré. Contacte-moi via LinkedIn !');
+    }
+  </script>
+</body>
+</html>

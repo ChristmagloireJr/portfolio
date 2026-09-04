@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tableau E5 — Malon Christmagloire</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">CM<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="e5.html" class="active">Tableau E5</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label reveal">BTS SIO SISR</span>
+      <h1 class="reveal">Tableau de synthèse E5</h1>
+      <p class="reveal">Récapitulatif de mes réalisations professionnelles — 1ère année</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Filtres -->
+      <div class="hero-stack reveal" style="margin-bottom: 32px; justify-content: center;">
+        <button class="tag filter-btn active" data-filter="all">Tout afficher</button>
+        <button class="tag filter-btn" data-filter="school">Milieu scolaire</button>
+        <button class="tag filter-btn" data-filter="pro">Milieu professionnel</button>
+      </div>
+
+      <div class="e5-table-wrap reveal">
+        <table class="e5-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Titre de la tâche</th>
+              <th>Compétence(s)</th>
+              <th>Contexte</th>
+              <th>Période</th>
+              <th>Lien</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-context="school">
+              <td><span style="font-family:var(--mono);color:var(--accent);">01</span></td>
+              <td><strong>Virtualisation avec VirtualBox</strong></td>
+              <td>Gérer le patrimoine informatique</td>
+              <td><span class="badge badge-school">Scolaire</span></td>
+              <td>2024–2025</td>
+              <td><a href="projets.html#virtualbox">Voir →</a></td>
+            </tr>
+            <tr data-context="school">
+              <td><span style="font-family:var(--mono);color:var(--accent);">02</span></td>
+              <td><strong>Mise en place d'un pare-feu pfSense</strong></td>
+              <td>Mettre à disposition un service informatique</td>
+              <td><span class="badge badge-school">Scolaire</span></td>
+              <td>2024–2025</td>
+              <td><a href="projets.html#pfsense">Voir →</a></td>
+            </tr>
+            <tr data-context="school">
+              <td><span style="font-family:var(--mono);color:var(--accent);">03</span></td>
+              <td><strong>Déploiement de GLPI</strong></td>
+              <td>Gérer le patrimoine informatique · Répondre aux incidents</td>
+              <td><span class="badge badge-school">Scolaire</span></td>
+              <td>2024–2025</td>
+              <td><a href="projets.html#glpi">Voir →</a></td>
+            </tr>
+            <tr data-context="school">
+              <td><span style="font-family:var(--mono);color:var(--accent);">04</span></td>
+              <td><strong>Déploiement de Kanboard</strong></td>
+              <td>Travailler en mode projet</td>
+              <td><span class="badge badge-school">Scolaire</span></td>
+              <td>2024–2025</td>
+              <td><a href="projets.html#kanboard">Voir →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="center reveal" style="margin-top: 32px;">
+        <a href="../docs/tableau-e5.pdf" class="btn btn-ghost" download>
+          📄 Télécharger le tableau E5 (PDF)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">CM<span class="accent">.</span></span>
+        <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Filtre du tableau E5
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.e5-table tbody tr').forEach(row => {
+          row.style.display = (filter === 'all' || row.dataset.context === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

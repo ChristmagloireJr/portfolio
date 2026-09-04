@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projets — Malon Christmagloire</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">CM<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="e5.html">Tableau E5</a></li>
+        <li><a href="projets.html" class="active">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label reveal">Réalisations</span>
+      <h1 class="reveal">Mes projets</h1>
+      <p class="reveal">Fiches détaillées de mes travaux pratiques et réalisations en BTS SIO SISR</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- PROJET 1 : VirtualBox -->
+      <div class="project-detail reveal" id="virtualbox">
+        <div class="project-detail-header">
+          <div>
+            <div class="project-tag" style="margin-bottom:10px;">Virtualisation</div>
+            <h2>Virtualisation avec VirtualBox</h2>
+          </div>
+          <span class="badge badge-school">Milieu scolaire</span>
+        </div>
+        <p>
+          Installation et configuration de l'hyperviseur <strong>VirtualBox</strong> pour créer 
+          et gérer plusieurs machines virtuelles. L'objectif était de maîtriser la virtualisation 
+          de systèmes d'exploitation variés dans un environnement isolé.
+        </p>
+        <p>
+          Les machines virtuelles déployées incluent : <strong>Windows 10</strong>, 
+          <strong>Windows 11</strong>, <strong>Windows 10 LTSC</strong> (version Long Term 
+          Support Channel, stable pour les environnements professionnels), <strong>Debian</strong> 
+          et <strong>Ubuntu</strong>. La configuration de chaque VM comprend la gestion des 
+          ressources (RAM, CPU, stockage), le paramétrage des modes réseau (NAT, Bridge, 
+          Réseau interne) et l'installation des Guest Additions pour améliorer les performances.
+        </p>
+
+        <div class="screenshot-placeholder">
+          <span>📸</span>
+          Capture d'écran à venir — Interface VirtualBox avec les VMs listées
+        </div>
+
+        <div class="project-meta">
+          <span class="tag">VirtualBox</span>
+          <span class="tag">Windows 10</span>
+          <span class="tag">Windows 11</span>
+          <span class="tag">Windows 10 LTSC</span>
+          <span class="tag">Debian</span>
+          <span class="tag">Ubuntu</span>
+          <span class="tag">Virtualisation</span>
+        </div>
+
+        <div style="margin-top: 20px; padding: 16px; background: var(--accent-light); border-radius: var(--radius); border-left: 3px solid var(--accent);">
+          <p style="color: var(--text); font-size: 0.85rem; margin: 0;">
+            <strong>Compétence E5 :</strong> Gérer le patrimoine informatique — 
+            Recenser et identifier les ressources numériques
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJET 2 : pfSense -->
+      <div class="project-detail reveal" id="pfsense">
+        <div class="project-detail-header">
+          <div>
+            <div class="project-tag" style="margin-bottom:10px;">Sécurité réseau</div>
+            <h2>Mise en place d'un pare-feu pfSense</h2>
+          </div>
+          <span class="badge badge-school">Milieu scolaire</span>
+        </div>
+        <p>
+          Installation et configuration d'un pare-feu <strong>pfSense</strong> déployé en 
+          machine virtuelle. pfSense est une solution open source basée sur FreeBSD, 
+          largement utilisée en entreprise pour sécuriser les réseaux.
+        </p>
+        <p>
+          Le travail a consisté à configurer les interfaces réseau <strong>WAN</strong> 
+          (réseau externe) et <strong>LAN</strong> (réseau interne), définir des 
+          <strong>règles de filtrage</strong> pour contrôler le trafic entrant et sortant, 
+          et vérifier l'isolation correcte des machines du réseau. L'interface web d'administration 
+          de pfSense a été utilisée pour toute la configuration.
+        </p>
+
+        <div class="screenshot-placeholder">
+          <span>📸</span>
+          Capture d'écran à venir — Tableau de bord pfSense + règles de filtrage
+        </div>
+
+        <div class="project-meta">
+          <span class="tag">pfSense</span>
+          <span class="tag">Pare-feu</span>
+          <span class="tag">WAN/LAN</span>
+          <span class="tag">Règles de filtrage</span>
+          <span class="tag">Sécurité réseau</span>
+          <span class="tag">FreeBSD</span>
+        </div>
+
+        <div style="margin-top: 20px; padding: 16px; background: var(--accent-light); border-radius: var(--radius); border-left: 3px solid var(--accent);">
+          <p style="color: var(--text); font-size: 0.85rem; margin: 0;">
+            <strong>Compétence E5 :</strong> Mettre à disposition un service informatique — 
+            Réaliser les tests d'intégration et d'acceptation d'un service
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJET 3 : GLPI -->
+      <div class="project-detail reveal" id="glpi">
+        <div class="project-detail-header">
+          <div>
+            <div class="project-tag" style="margin-bottom:10px;">Gestion de parc</div>
+            <h2>Déploiement de GLPI</h2>
+          </div>
+          <span class="badge badge-school">Milieu scolaire</span>
+        </div>
+        <p>
+          Installation et configuration de <strong>GLPI</strong> (Gestion Libre de Parc 
+          Informatique), un outil open source de gestion du parc informatique et de helpdesk.
+        </p>
+        <p>
+          Le déploiement comprenait l'installation du serveur web (Apache), de la base de 
+          données (MariaDB) et de GLPI lui-même. La configuration a permis de mettre en place 
+          un <strong>inventaire du parc matériel et logiciel</strong>, un système de 
+          <strong>gestion des tickets d'incidents</strong>, et la création de comptes 
+          utilisateurs avec différents niveaux de droits (technicien, utilisateur final, administrateur).
+        </p>
+
+        <div class="screenshot-placeholder">
+          <span>📸</span>
+          Capture d'écran à venir — Tableau de bord GLPI + liste de tickets
+        </div>
+
+        <div class="project-meta">
+          <span class="tag">GLPI</span>
+          <span class="tag">Apache</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">Ticketing</span>
+          <span class="tag">Inventaire parc</span>
+          <span class="tag">Helpdesk</span>
+        </div>
+
+        <div style="margin-top: 20px; padding: 16px; background: var(--accent-light); border-radius: var(--radius); border-left: 3px solid var(--accent);">
+          <p style="color: var(--text); font-size: 0.85rem; margin: 0;">
+            <strong>Compétence E5 :</strong> Gérer le patrimoine informatique · 
+            Répondre aux incidents et aux demandes d'assistance
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJET 4 : Kanboard -->
+      <div class="project-detail reveal" id="kanboard">
+        <div class="project-detail-header">
+          <div>
+            <div class="project-tag" style="margin-bottom:10px;">Gestion de projet</div>
+            <h2>Déploiement de Kanboard</h2>
+          </div>
+          <span class="badge badge-school">Milieu scolaire</span>
+        </div>
+        <p>
+          Installation et configuration de <strong>Kanboard</strong>, un outil de gestion 
+          de projet open source basé sur la méthode <strong>Kanban</strong>. 
+          Kanboard permet de visualiser et gérer le flux de travail sous forme de colonnes 
+          (À faire / En cours / Terminé).
+        </p>
+        <p>
+          Le déploiement a permis de créer des <strong>tableaux de projet</strong>, 
+          d'assigner des tâches à des utilisateurs, de définir des dates d'échéance et 
+          des priorités, et de suivre l'avancement des tâches en temps réel. 
+          Cet outil est utilisé dans de nombreuses entreprises pour organiser le travail 
+          des équipes IT.
+        </p>
+
+        <div class="screenshot-placeholder">
+          <span>📸</span>
+          Capture d'écran à venir — Interface Kanboard avec tableau de tâches
+        </div>
+
+        <div class="project-meta">
+          <span class="tag">Kanboard</span>
+          <span class="tag">Méthode Kanban</span>
+          <span class="tag">Gestion de projet</span>
+          <span class="tag">PHP</span>
+          <span class="tag">SQLite</span>
+        </div>
+
+        <div style="margin-top: 20px; padding: 16px; background: var(--accent-light); border-radius: var(--radius); border-left: 3px solid var(--accent);">
+          <p style="color: var(--text); font-size: 0.85rem; margin: 0;">
+            <strong>Compétence E5 :</strong> Travailler en mode projet — 
+            Analyser les objectifs et les modalités d'organisation d'un projet
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">CM<span class="accent">.</span></span>
+        <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
