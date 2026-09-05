@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certifications — Malon Christmagloire</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">CM<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="e5.html">E5</a></li>
+                <li><a href="e6.html">E6</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <div class="container">
+            <span class="section-label reveal">Mes certifications</span>
+            <h1 class="reveal">Certifications</h1>
+            <p class="reveal">Les certifications et badges obtenus au cours de mon parcours</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="skills-grid">
+                    <div class="skill-card reveal" onclick="ouvrirModal('tai')" style="cursor:pointer;">
+                        <div class="skill-icon">🏅</div>
+                        <h3>Titre Professionnel TAI</h3>
+                        <p>Technicien d'Assistance en Informatique — obtenu en septembre 2024 au centre de formation
+                            AFCI, Paris 75018.</p>
+                        <div class="project-meta" style="margin-top:14px;">
+                            <span class="tag">AFCI</span>
+                            <span class="tag">2024</span>
+                            <span class="tag">Titre Pro</span>
+                        </div>
+                        <p style="margin-top:12px; color:var(--accent); font-size:0.85rem;">👆 Cliquer pour voir le
+                            diplôme</p>
+                    </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Computer Hardware Basics</h3>
+                    <p>Certification Cisco Networking Academy — Les bases du matériel informatique. Badge vérifié obtenu
+                        le 4 avril 2024.</p>
+                    <div class="project-meta" style="margin-top:14px;">
+                        <span class="tag">Cisco Netacad</span>
+                        <span class="tag">Avril 2024</span>
+                        <span class="tag">Badge vérifié</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔐</div>
+                    <h3>SecNumacadémie — Module Cybersécurité</h3>
+                    <p>Premier module de cybersécurité complété sur la plateforme SecNumacadémie de l'ANSSI, agence
+                        nationale de la sécurité des systèmes d'information.</p>
+                    <div class="project-meta" style="margin-top:14px;">
+                        <span class="tag">ANSSI</span>
+                        <span class="tag">Cybersécurité</span>
+                        <span class="tag">SecNumacadémie</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="nav-logo">CM<span class="accent">.</span></span>
+                <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <!-- MODALE -->
+<div id="modal" onclick="fermerModal()" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.85);
+  z-index:999;
+  align-items:center;
+  justify-content:center;
+">
+  <div style="position:relative; max-width:800px; width:90%;">
+    <span onclick="fermerModal()" style="
+      position:absolute;
+      top:-40px;
+      right:0;
+      color:white;
+      font-size:2rem;
+      cursor:pointer;
+    ">✕</span>
+    <iframe id="modal-frame" src="" style="
+      width:100%;
+      height:80vh;
+      border:none;
+      border-radius:12px;
+    "></iframe>
+  </div>
+</div>
+<script>
+  function ouvrirModal(certif) {
+    const urls = {
+      'tai': '../docs/tai.pdf',
+      'cisco': '../docs/cisco.pdf',
+      'anssi': '../docs/anssi.pdf'
+    };
+    document.getElementById('modal-frame').src = urls[certif];
+    const modal = document.getElementById('modal');
+    modal.style.display = 'flex';
+  }
+
+  function fermerModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal-frame').src = '';
+  }
+</script>
+</body>
+
+</html>
