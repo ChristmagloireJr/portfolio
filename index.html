@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Malon Christmagloire — Portfolio BTS SIO SISR</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
 
   <!-- NAV -->
-  <nav class="navbar" id="navbar">
+  <div id="navbar-container"></div>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">CM<span class="accent">.</span></a>
+      <a href="#accueil" class="nav-logo">CM<span class="accent">.</span></a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="pages/apropos.html">À propos</a></li>
-        <li><a href="pages/certifications.html">Certifications</a></li>
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projets">Projets</a></li>
         <li><a href="pages/parcours.html">Parcours</a></li>
-        <li><a href="pages/veille.html">Veille</a></li>
+        <li><a href="#veille">Veille</a></li>
         <li><a href="pages/e5.html">E5</a></li>
         <li><a href="pages/e6.html">E6</a></li>
-        <li><a href="pages/projets.html">Projets</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank" class="btn btn-primary" style="padding:6px 14px;">LinkedIn</a></li>
       </ul>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button id="theme-toggle" aria-label="Changer de thème" style="background:none;border:1px solid var(--border);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:1rem;">🌙</button>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="accueil">
     <div class="hero-bg-grid"></div>
     <div class="hero-content">
       <div class="hero-badge reveal">
         <span class="dot"></span> Disponible — BTS SIO SISR · 1ère année
       </div>
-      <h1 class="hero-title reveal">
-        Malon<br><span class="accent">Christmagloire</span>
-      </h1>
+      <h1 class="hero-title reveal">Malon<br><span class="accent">Christmagloire</span></h1>
       <p class="hero-sub reveal">
         Technicien en infrastructure système et réseaux<br>
         Alternant chez <strong>Groupe Odéalim</strong> · APEP SUP Paris
       </p>
       <div class="hero-actions reveal">
-        <a href="pages/e5.html" class="btn btn-primary">Voir mon tableau E5</a>
-        <a href="pages/contact.html" class="btn btn-ghost">Me contacter</a>
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
       </div>
       <div class="hero-stack reveal">
         <span class="tag">VirtualBox</span>
@@ -77,156 +74,114 @@
           <p class="t-out">Titre TAI · Alternant IT</p>
           <p class="t-out">Paris, France</p>
           <p><span class="t-prompt">malon@sisr:~$</span> <span class="t-cmd">ls competences/</span></p>
-          <p class="t-out accent-text">réseau/ sécurité/ virtualisation/ support/</p>
+          <p class="t-out accent-text">réseau/  sécurité/  virtualisation/  support/</p>
           <p><span class="t-prompt">malon@sisr:~$</span> <span class="t-cursor">█</span></p>
         </div>
       </div>
     </div>
   </section>
 
-<!-- A propos -->
-
-<div class="page-hero">
-    <div class="container">
-      <span class="section-label reveal">Qui suis-je ?</span>
-      <h1 class="reveal">À propos de moi</h1>
-      <p class="reveal">Mon parcours, ma personnalité et mes objectifs professionnels</p>
-    </div>
-  </div>
-  <section class="section">
+  <!-- À PROPOS -->
+  <section class="section about" id="apropos">
     <div class="container">
       <div class="about-grid">
-
         <div class="about-text reveal">
-          <span class="section-label">Mon histoire</span>
+          <span class="section-label">À propos</span>
           <h2>Un parcours atypique<br>vers l'informatique</h2>
-          <p>
-            J'ai 25 ans et je suis actuellement en deuxième année de BTS SIO option SISR
-            à l'<strong>APEP SUP</strong> à Paris. Après plusieurs expériences professionnelles dans différents domaines, je suis aujourd’hui titulaire d’un titre professionnel
-
-            <strong>Technicien d'Assistance en Informatique (TAI)</strong>.
-          </p>
-          <p>
-
-            Titulaire d'un <strong>titre professionnel TAI</strong> 
-            (Technicien d'Assistance en Informatique), je poursuis aujourd'hui 
-            vers une spécialisation en infrastructure système et réseaux.
-          </p>
-          <p>
-            En alternance chez <strong>Groupe Odéalim</strong>, je gère au quotidien
-            le support utilisateur, la prise en charge des tickets N1 (ponctuellement N2) sur Jira, ainsi que le
-            dépannage informatique et la mise à jour
-            de solutions IT.
-          </p>
-
+          <p>J'ai 25 ans et je suis actuellement en première année de <strong>BTS SIO option SISR</strong> à l'APEP SUP Paris. Avant de me spécialiser en informatique, j'ai travaillé dans la logistique et la restauration.</p>
+          <p>Titulaire d'un <strong>titre professionnel TAI</strong>, je poursuis aujourd'hui vers une spécialisation en infrastructure système et réseaux.</p>
+          <p>En alternance chez <strong>Groupe Odéalim</strong>, je gère le support utilisateur, la prise en charge des tickets N1/N2 sur Jira, le dépannage informatique et la mise en place de solutions IT.</p>
           <div class="about-stats">
-            <div class="stat">
-              <span class="stat-num">25</span>
-              <span class="stat-label">Ans</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">TAI</span>
-              <span class="stat-label">Titre obtenu</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">2026</span>
-              <span class="stat-label">Diplôme BTS visé</span>
-            </div>
+            <div class="stat"><span class="stat-num">25</span><span class="stat-label">Ans</span></div>
+            <div class="stat"><span class="stat-num">TAI</span><span class="stat-label">Titre obtenu</span></div>
+            <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Diplôme BTS visé</span></div>
           </div>
         </div>
-
         <div class="about-card reveal">
           <div class="info-card">
             <div class="info-row">
               <span class="info-icon">🎓</span>
-              <div>
-                <span class="info-title">Formation actuelle</span>
-                <span class="info-val">BTS SIO SISR — APEP SUP Paris</span>
-              </div>
+              <div><span class="info-title">Formation</span><span class="info-val">BTS SIO SISR — APEP SUP Paris</span></div>
             </div>
             <div class="info-row">
               <span class="info-icon">🏆</span>
-              <div>
-                <span class="info-title">Titre obtenu</span>
-                <span class="info-val">Technicien d'Assistance en Informatique (TAI)</span>
-              </div>
+              <div><span class="info-title">Titre obtenu</span><span class="info-val">Technicien d'Assistance en Informatique (TAI)</span></div>
             </div>
             <div class="info-row">
               <span class="info-icon">💼</span>
-              <div>
-                <span class="info-title">Alternance</span>
-                <span class="info-val">Technicien IT — Groupe Odéalim</span>
-              </div>
+              <div><span class="info-title">Alternance</span><span class="info-val">Technicien IT — Groupe Odéalim</span></div>
             </div>
             <div class="info-row">
               <span class="info-icon">📍</span>
-              <div>
-                <span class="info-title">Localisation</span>
-                <span class="info-val">Paris, Île-de-France</span>
-              </div>
+              <div><span class="info-title">Localisation</span><span class="info-val">Paris, Île-de-France</span></div>
             </div>
             <div class="info-row">
-              <span class="info-icon">🌍</span>
-              <div>
-                <span class="info-title">Langues</span>
-                <span class="info-val">Français (natif)</span>
-              </div>
+              <span class="info-icon">🔗</span>
+              <div><span class="info-title">LinkedIn</span><a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank" class="info-link">christmagloire-malon</a></div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- COMPÉTENCES -->
-  <section class="section skills-section">
+  <section class="section" id="competences">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Compétences</span>
         <h2>Ce que je maîtrise</h2>
       </div>
       <div class="skills-grid">
-        <div class="skill-card reveal">
+        <div class="skill-card reveal"><div class="skill-icon">🖥️</div><h3>Virtualisation</h3><p>VirtualBox, VM Windows 10/11/LTSC, Debian, Ubuntu</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">🔒</div><h3>Sécurité réseau</h3><p>pfSense, règles pare-feu, filtrage réseau, WAN/LAN</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">📋</div><h3>Gestion de parc</h3><p>GLPI, inventaire, ticketing, gestion des incidents</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">📌</div><h3>Gestion de projet</h3><p>Kanboard, méthode Kanban, suivi de tâches</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">🐧</div><h3>Systèmes</h3><p>Linux (Debian/Ubuntu), Windows Server, ligne de commande</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">🛠️</div><h3>Support IT</h3><p>Assistance utilisateur, dépannage matériel et logiciel</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section about" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Certifications</span>
+        <h2>Mes certifications</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" onclick="ouvrirModal('tai')" style="cursor:pointer;">
+          <div class="skill-icon">🏅</div>
+          <h3>Titre Professionnel TAI</h3>
+          <p>Technicien d'Assistance en Informatique — obtenu en septembre 2024 au centre de formation AFCI, Paris 75018.</p>
+          <div class="project-meta" style="margin-top:14px;"><span class="tag">AFCI</span><span class="tag">2024</span><span class="tag">Titre Pro</span></div>
+          <p style="margin-top:12px;color:var(--accent);font-size:0.85rem;">👆 Cliquer pour voir le diplôme</p>
+        </div>
+        <div class="skill-card reveal" onclick="ouvrirModal('cisco')" style="cursor:pointer;">
           <div class="skill-icon">🖥️</div>
-          <h3>Virtualisation</h3>
-          <p>VirtualBox, VM Windows 10/11/LTSC, Debian, Ubuntu</p>
+          <h3>Computer Hardware Basics</h3>
+          <p>Certification Cisco Networking Academy — Les bases du matériel informatique. Badge vérifié obtenu le 4 avril 2024.</p>
+          <div class="project-meta" style="margin-top:14px;"><span class="tag">Cisco Netacad</span><span class="tag">Avril 2024</span><span class="tag">Badge vérifié</span></div>
+          <p style="margin-top:12px;color:var(--accent);font-size:0.85rem;">👆 Cliquer pour voir le diplôme</p>
         </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🔒</div>
-          <h3>Sécurité réseau</h3>
-          <p>pfSense, règles pare-feu, filtrage réseau, WAN/LAN</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">📋</div>
-          <h3>Gestion de parc</h3>
-          <p>GLPI, inventaire, ticketing, gestion des incidents</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">📌</div>
-          <h3>Gestion de projet</h3>
-          <p>Kanboard, méthode Kanban, suivi de tâches</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🐧</div>
-          <h3>Systèmes</h3>
-          <p>Linux (Debian/Ubuntu), Windows Server, ligne de commande</p>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🛠️</div>
-          <h3>Support IT</h3>
-          <p>Assistance utilisateur, dépannage matériel et logiciel</p>
+        <div class="skill-card reveal" onclick="ouvrirModal('anssi')" style="cursor:pointer;">
+          <div class="skill-icon">🔐</div>
+          <h3>SecNumacadémie — Cybersécurité</h3>
+          <p>Premier module de cybersécurité complété sur la plateforme SecNumacadémie de l'ANSSI.</p>
+          <div class="project-meta" style="margin-top:14px;"><span class="tag">ANSSI</span><span class="tag">Cybersécurité</span><span class="tag">SecNumacadémie</span></div>
+          <p style="margin-top:12px;color:var(--accent);font-size:0.85rem;">👆 Cliquer pour voir le diplôme</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJETS APERÇU -->
-  <section class="section projects-preview">
+  <!-- PROJETS -->
+  <section class="section" id="projets">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Réalisations</span>
-        <h2>Derniers projets</h2>
+        <h2>Mes projets</h2>
       </div>
       <div class="projects-grid">
         <a href="pages/projets.html#virtualbox" class="project-card reveal">
@@ -254,8 +209,90 @@
           <span class="project-arrow">→</span>
         </a>
       </div>
-      <div class="center reveal">
-        <a href="pages/projets.html" class="btn btn-primary">Voir tous les projets</a>
+    </div>
+  </section>
+
+  <!-- VEILLE -->
+  <section class="section about" id="veille">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Veille technologique</span>
+        <h2>Ma veille</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-tag">Cybersécurité</div>
+          <h3>Actualités sécurité</h3>
+          <p>Suivi des CVE, failles et bonnes pratiques via ANSSI, CERT-FR et Krebs on Security.</p>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-tag">Réseaux</div>
+          <h3>Infrastructure & Réseaux</h3>
+          <p>Veille sur les évolutions des protocoles réseau, SDN et solutions cloud via Cisco Blog et NetworkWorld.</p>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-tag">Systèmes</div>
+          <h3>Linux & Windows Server</h3>
+          <p>Suivi des mises à jour système, nouvelles versions et bonnes pratiques d'administration.</p>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-tag">IA & Tech</div>
+          <h3>Intelligence Artificielle</h3>
+          <p>Veille sur l'impact de l'IA dans les métiers IT et les outils émergents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Contact</span>
+        <h2>Me contacter</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-icon">💼</span>
+              <div><span class="info-title">LinkedIn</span><a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank" class="info-link">christmagloire-malon</a></div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📘</span>
+              <div><span class="info-title">Facebook</span><a href="https://www.facebook.com/share/18LydXCJAA/?mibextid=wwXIfr" target="_blank" class="info-link">Mon profil Facebook</a></div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div><span class="info-title">Localisation</span><span class="info-val">Paris, Île-de-France</span></div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <div><span class="info-title">École</span><a href="https://www.apepsup.com/" target="_blank" class="info-link">APEP SUP Paris</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" placeholder="Votre nom" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" placeholder="votre@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" placeholder="Objet de votre message"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -268,13 +305,58 @@
         <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
-          <a href="pages/contact.html">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-</body>
+  <!-- MODALE -->
+  <div id="modal" onclick="fermerModal()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;">
+    <div style="position:relative;max-width:800px;width:90%;">
+      <span onclick="fermerModal()" style="position:absolute;top:-40px;right:0;color:white;font-size:2rem;cursor:pointer;">✕</span>
+      <iframe id="modal-frame" src="" style="width:100%;height:80vh;border:none;border-radius:12px;"></iframe>
+    </div>
+  </div>
 
+  <script src="js/main.js"></script>
+  <script>
+    // Modale certifications
+    function ouvrirModal(certif) {
+      const urls = { 'tai': 'docs/tai.pdf', 'cisco': 'docs/cisco.pdf', 'anssi': 'docs/anssi.pdf' };
+      document.getElementById('modal-frame').src = urls[certif];
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function fermerModal() {
+      document.getElementById('modal').style.display = 'none';
+      document.getElementById('modal-frame').src = '';
+    }
+
+    // Thème clair/sombre
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
+
+    // Formulaire contact
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Formulaire non encore configuré. Contacte-moi via LinkedIn !');
+    }
+  </script>
+</body>
 </html>

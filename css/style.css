@@ -563,3 +563,35 @@ img { max-width: 100%; display: block; }
   .hero-title { font-size: 2.4rem; }
   .terminal { max-width: 100%; }
 }
+
+/* ============================================
+   THÈME SOMBRE
+   ============================================ */
+body.dark {
+  --bg:         #0F1117;
+  --bg-card:    #1A1D2E;
+  --text:       #F1F5F9;
+  --text-muted: #94A3B8;
+  --border:     #2D3348;
+  --border-strong:#3D4460;
+  --accent-light:#1E3A5F;
+}
+body.dark .navbar {
+  background: rgba(15,17,23,0.85);
+}
+body.dark .hero-bg-grid {
+  background-image:
+    linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px);
+}
+body.dark .terminal {
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+body.dark .tag {
+  background: var(--bg-card);
+}
+body.dark .form-group input,
+body.dark .form-group textarea {
+  background: var(--bg-card);
+  color: var(--text);
+}

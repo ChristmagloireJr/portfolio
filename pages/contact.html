@@ -8,22 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">CM<span class="accent">.</span></a>
-      <ul class="nav-links">
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="e5.html">Tableau E5</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
+<div id="navbar-container"></div>
   <div class="page-hero">
     <div class="container">
       <span class="section-label reveal">Contact</span>
@@ -126,6 +111,7 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/navbar.js"></script>
   <script>
     function handleSubmit(e) {
       e.preventDefault();

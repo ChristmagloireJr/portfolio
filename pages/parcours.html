@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcours — Malon Christmagloire</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        .timeline {
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 0 0 40px 60px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 6px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid var(--bg);
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+
+        .timeline-date {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+
+        .timeline-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 20px 24px;
+            transition: box-shadow var(--transition);
+        }
+
+        .timeline-card:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .timeline-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .timeline-card .org {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .timeline-card ul {
+            padding-left: 18px;
+        }
+
+        .timeline-card ul li {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .section-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            padding: 8px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all var(--transition);
+        }
+
+        .tab-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <div class="page-hero">
+        <div class="container">
+            <span class="section-label reveal">Mon parcours</span>
+            <h1 class="reveal">Parcours</h1>
+            <p class="reveal">Mes expériences professionnelles et formations</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-tabs reveal">
+                <button class="tab-btn active" onclick="showTab('pro', this)">💼 Expériences pro</button>
+                <button class="tab-btn" onclick="showTab('formation', this)">🎓 Formations</button>
+            </div>
+
+            <!-- EXPÉRIENCES PRO -->
+            <div id="tab-pro">
+                <ul class="timeline">
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">Octobre 2025 — Aujourd'hui</div>
+                        <div class="timeline-card">
+                            <h3>Technicien IT — Alternance</h3>
+                            <div class="org">Groupe Odéalim — Paris</div>
+                            <ul>
+                                <li>Support utilisateur N1/N2 sur Jira</li>
+                                <li>Gestion du parc informatique</li>
+                                <li>Dépannage matériel et logiciel</li>
+                                <li>Mise en place de solutions IT (AIC, Artémis, Digital Insure)</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-card">
+                            <h3>Technicien de maintenance des systèmes d'alarme</h3>
+                            <div class="org">ID-Controle SECUR — St.-Fargeau-Ponthierry</div>
+                            <ul>
+                                <li>Notion de base sur CFA (courant faible) et CFO (courant fort)</li>
+                                <li>Installation de caméra et configuration d'antenne</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-card">
+                            <h3>Stage — Technicien Informatique Niveau 1</h3>
+                            <div class="org">Mairie de Savigny-sur-Orge</div>
+                            <ul>
+                                <li>Assistance et dépannage utilisateurs</li>
+                                <li>Intervention sur les éléments de l'infrastructure</li>
+                                <li>Préparation de postes de travail</li>
+                                <li>Inventaire du stock avec GLPI</li>
+                                <li>Virtualisation avec Hyper-V</li>
+                                <li>Prise en main à distance avec AnyDesk et TightVNC</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2021 — 2022</div>
+                        <div class="timeline-card">
+                            <h3>Cours Informatique (Bénévolat)</h3>
+                            <div class="org">Association Génération2 — Évry-Courcouronnes</div>
+                            <ul>
+                                <li>Accompagnement des personnes dans leurs projets numériques</li>
+                                <li>Sensibilisation aux risques des réseaux sociaux</li>
+                                <li>Initiation à la technologie pour seniors et jeunes</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2022 — 2023</div>
+                        <div class="timeline-card">
+                            <h3>Secouriste PSE1 — Service civique</h3>
+                            <div class="org">U.M.P.S — Bondoufle, France</div>
+                            <ul>
+                                <li>Intervention aux cross de collège, à l'hôpital, aux soirées étudiantes</li>
+                                <li>Utilisation du matériel de premiers secours</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- FORMATIONS -->
+            <div id="tab-formation" style="display:none;">
+                <ul class="timeline">
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">Octobre 2025 — 2027</div>
+                        <div class="timeline-card">
+                            <h3>BTS SIO — Option SISR</h3>
+                            <div class="org">APEP SUP — Paris</div>
+                            <ul>
+                                <li>Solutions d'infrastructure, systèmes et réseaux</li>
+                                <li>En alternance chez Groupe Odéalim</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">Mars 2024 — Septembre 2024</div>
+                        <div class="timeline-card">
+                            <h3>Titre Professionnel TAI</h3>
+                            <div class="org">AFCI — Paris 75018</div>
+                            <ul>
+                                <li>Intervenir sur les équipements numériques</li>
+                                <li>Assister et dépanner les utilisateurs</li>
+                                <li>Préparer un poste de travail</li>
+                                <li>Installer un système d'exploitation</li>
+                                <li>Intervenir sur un annuaire réseau Active Directory</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2022 — 2023</div>
+                        <div class="timeline-card">
+                            <h3>Pré-graduate Design Graphique</h3>
+                            <div class="org">Studi — Online</div>
+                            <ul>
+                                <li>Illustrator — Photoshop — InDesign</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-card">
+                            <h3>Titre Professionnel Préparateur de commande en entrepôt</h3>
+                            <div class="org">Promotrans — Choisy-le-Roi</div>
+                            <ul>
+                                <li>Utiliser les différents chariots élévateurs</li>
+                                <li>Utiliser un PDA</li>
+                                <li>Préparer les colis</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="timeline-date">2020 — 2023</div>
+                        <div class="timeline-card">
+                            <h3>PIX (Certificat)</h3>
+                            <div class="org">EDIPE — Brétigny-sur-Orge</div>
+                            <ul>
+                                <li>Certification des compétences numériques</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="nav-logo">CM<span class="accent">.</span></span>
+                <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function showTab(tab, el) {
+            document.getElementById('tab-pro').style.display = tab === 'pro' ? 'block' : 'none';
+            document.getElementById('tab-formation').style.display = tab === 'formation' ? 'block' : 'none';
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veille — Malon Christmagloire</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    .veille-hero {
+      text-align: center;
+      padding: 40px 0 60px;
+    }
+    .veille-hero h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 700;
+      color: var(--accent);
+      margin: 12px 0 8px;
+    }
+    .veille-hero p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .periode-block {
+      margin-bottom: 60px;
+    }
+    .periode-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .periode-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-family: var(--mono);
+      flex-shrink: 0;
+    }
+    .periode-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .article-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      transition: box-shadow var(--transition), border-color var(--transition);
+    }
+    .article-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent);
+    }
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .article-source {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .article-date {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .article-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .article-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .article-link {
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .article-link:hover { text-decoration: underline; }
+    @media (max-width: 700px) {
+      .articles-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label reveal">Veille technologique</span>
+      <h1 class="reveal">Ma veille</h1>
+      <p class="reveal">Suivi de l'actualité IT — Cybersécurité, IA, Réseaux & Infrastructures</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="veille-hero reveal">
+        <span class="section-label">Thème principal</span>
+        <h2>L'impact de l'IA et des nouvelles menaces cyber<br>sur les infrastructures IT</h2>
+        <p>Suivi continu depuis Octobre 2025 — Malon Christmagloire, BTS SIO SISR</p>
+      </div>
+
+      <!-- PÉRIODE 1 -->
+      <div class="periode-block reveal">
+        <div class="periode-header">
+          <div class="periode-num">1</div>
+          <span class="periode-label">Octobre — Novembre 2025</span>
+        </div>
+        <div class="articles-grid">
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">ANSSI</span>
+              <span class="article-date">Octobre 2025</span>
+            </div>
+            <h3>Panorama de la cybermenace 2024</h3>
+            <p>L'ANSSI dresse un bilan des cyberattaques en France : augmentation des ransomwares ciblant les hôpitaux et collectivités, espionnage d'État et attaques sur les infrastructures critiques.</p>
+            <a href="https://www.cert.ssi.gouv.fr/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">ZDNET FR</span>
+              <span class="article-date">Octobre 2025</span>
+            </div>
+            <h3>Les ransomwares visent de plus en plus les PME</h3>
+            <p>Les cybercriminels délaissent progressivement les grandes entreprises mieux protégées pour cibler les PME et ETI, souvent moins bien équipées en cybersécurité.</p>
+            <a href="https://www.zdnet.fr/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">LINUX FOUNDATION</span>
+              <span class="article-date">Novembre 2025</span>
+            </div>
+            <h3>Linux dans les datacenters : état des lieux 2025</h3>
+            <p>Linux reste le système d'exploitation dominant dans les datacenters avec plus de 90% de parts de marché. Les distributions entreprise comme RHEL et Ubuntu Server dominent.</p>
+            <a href="https://www.linuxfoundation.org/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">CISCO BLOG</span>
+              <span class="article-date">Novembre 2025</span>
+            </div>
+            <h3>L'évolution des réseaux SD-WAN en entreprise</h3>
+            <p>Le SD-WAN (Software Defined WAN) s'impose comme la nouvelle norme pour les réseaux d'entreprise, offrant plus de flexibilité et une meilleure gestion des connexions multi-sites.</p>
+            <a href="https://blogs.cisco.com/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PÉRIODE 2 -->
+      <div class="periode-block reveal">
+        <div class="periode-header">
+          <div class="periode-num">2</div>
+          <span class="periode-label">Décembre 2025 — Janvier 2026</span>
+        </div>
+        <div class="articles-grid">
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">GARTNER</span>
+              <span class="article-date">Décembre 2025</span>
+            </div>
+            <h3>Prévisions IT 2025-2026 : l'IA au cœur des infrastructures</h3>
+            <p>Gartner prédit que 75% des entreprises auront intégré l'IA dans leurs outils de monitoring réseau d'ici 2026, automatisant la détection d'anomalies et la gestion des incidents.</p>
+            <a href="https://www.gartner.com/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">MICROSOFT</span>
+              <span class="article-date">Décembre 2025</span>
+            </div>
+            <h3>Windows Server 2025 : nouvelles fonctionnalités</h3>
+            <p>Microsoft déploie Windows Server 2025 avec des améliorations majeures en sécurité (Secured-Core Server), performance et intégration Azure, renforçant la sécurité des infrastructures hybrides.</p>
+            <a href="https://www.microsoft.com/fr-fr/windows-server" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">LE MONDE INFORMATIQUE</span>
+              <span class="article-date">Janvier 2026</span>
+            </div>
+            <h3>L'IA accélère la modernisation des datacenters</h3>
+            <p>Les besoins en puissance de calcul pour l'IA générative poussent les entreprises à moderniser leurs datacenters : GPU massivement déployés, refroidissement liquide, et réseaux haute vitesse.</p>
+            <a href="https://www.lemondeinformatique.fr/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">KORBEN</span>
+              <span class="article-date">Janvier 2026</span>
+            </div>
+            <h3>VirtualBox 7.1 : nouvelles fonctionnalités de virtualisation</h3>
+            <p>Oracle sort VirtualBox 7.1 avec le support amélioré des puces ARM, une meilleure intégration des GPU pour les VMs, et des performances réseau optimisées pour les environnements de test.</p>
+            <a href="https://korben.info/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PÉRIODE 3 -->
+      <div class="periode-block reveal">
+        <div class="periode-header">
+          <div class="periode-num">3</div>
+          <span class="periode-label">Février — Mars 2026</span>
+        </div>
+        <div class="articles-grid">
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">CERT-FR</span>
+              <span class="article-date">Février 2026</span>
+            </div>
+            <h3>Alerte : nouvelle vague de ransomwares LockBit</h3>
+            <p>Le CERT-FR émet une alerte sur une recrudescence des attaques LockBit ciblant les secteurs de la santé et des collectivités locales françaises, avec des demandes de rançon atteignant plusieurs millions d'euros.</p>
+            <a href="https://www.cert.ssi.gouv.fr/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">RED HAT</span>
+              <span class="article-date">Février 2026</span>
+            </div>
+            <h3>Rapport sur l'IA et les infrastructures numériques 2026</h3>
+            <p>Red Hat publie son rapport annuel sur l'état de l'open source en entreprise : 90% des DSI considèrent l'IA et l'open source comme indissociables pour moderniser leurs infrastructures IT.</p>
+            <a href="https://www.redhat.com/fr" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">UBUNTU</span>
+              <span class="article-date">Mars 2026</span>
+            </div>
+            <h3>Ubuntu 26.04 LTS : les nouveautés</h3>
+            <p>Canonical annonce Ubuntu 26.04 LTS avec un noyau Linux mis à jour, des améliorations de sécurité significatives et une meilleure intégration des outils IA pour les développeurs et sysadmins.</p>
+            <a href="https://ubuntu.com/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+          <div class="article-card">
+            <div class="article-meta">
+              <span class="article-source">NETWORKWORLD</span>
+              <span class="article-date">Mars 2026</span>
+            </div>
+            <h3>Zero Trust Network Access : la nouvelle norme sécurité</h3>
+            <p>Le modèle Zero Trust s'impose dans les entreprises : ne jamais faire confiance, toujours vérifier. Cette approche révolutionne la gestion des accès réseau et réduit significativement la surface d'attaque.</p>
+            <a href="https://www.networkworld.com/" target="_blank" class="article-link">Lire l'article →</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">CM<span class="accent">.</span></span>
+        <p>© 2025 Malon Christmagloire — Portfolio BTS SIO SISR</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/christmagloire-malon-9b377a1b6/" target="_blank">LinkedIn</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
